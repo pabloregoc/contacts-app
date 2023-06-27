@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <a mat-button routerLink="/">Inicio</a>
+    <a mat-button routerLink="/contacts">Contactos</a>
+    <a mat-button routerLink="/new-contact">Nuevo Contacto</a>
+</mat-toolbar>
+<mat-card class="card">
+
+    <mat-card-title>Gráficas de contactos</mat-card-title>
+    <mat-card-content>
+    <ngx-charts-pie-chart [view]="[400,300]" [results]="emailData"></ngx-charts-pie-chart>
+
+    <ngx-charts-pie-chart [view]="[400,300]" [results]="phoneData"></ngx-charts-pie-chart>
+    </mat-card-content>
+</mat-card>

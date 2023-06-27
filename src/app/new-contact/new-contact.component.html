@@ -1,0 +1,40 @@
+<mat-card>
+    <div>
+    
+    <mat-card-content>
+        <mat-card-title>Agregar contacto</mat-card-title>
+        <form (submit)="addContact()">
+            <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput type="text" name="name" [(ngModel)]="nombre">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>Apellido 1</mat-label>
+            <input matInput type="text" name="apellido1" [(ngModel)]="apellido1">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>Apellido 2</mat-label>
+            <input matInput type="text" name="apellido2" [(ngModel)]="apellido2">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>Teléfono</mat-label>
+            <input matInput type="text" name="telefono" [(ngModel)]="telefono">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="text" name="mail" [(ngModel)]="email">
+            </mat-form-field>
+            <button mat-icon-button  type="submit"><mat-icon>add</mat-icon></button>
+
+    </form>
+
+    
+
+    </mat-card-content>
+</div> 
+</mat-card>
+
